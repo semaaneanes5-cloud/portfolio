@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anes S. — Front-End Web Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Public+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f4f8;--ink:#0f1b2d;--mute:#56627a;--card:#fff;--line:#d7dde9;--acc:#2d4fd6;--hi:#f2b21a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1524;--ink:#eef2fb;--mute:#9aa8c4;--card:#15203a;--line:#26345a;--acc:#8fa8ff;--hi:#f2b21a}}
+:root[data-theme="dark"]{--bg:#0d1524;--ink:#eef2fb;--mute:#9aa8c4;--card:#15203a;--line:#26345a;--acc:#8fa8ff;--hi:#f2b21a}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.7 "Public Sans",system-ui,sans-serif}
+.w{max-width:900px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-weight:500}
+nav a{color:var(--ink);text-decoration:none;margin-left:20px}nav a:first-child{margin:0;font:800 20px "Bricolage Grotesque",sans-serif}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.hero{padding:64px 0 56px}
+h1{font:800 clamp(46px,11vw,112px)/.95 "Bricolage Grotesque",sans-serif;letter-spacing:-.035em;margin:0 0 22px}
+h1 span{background:linear-gradient(transparent 62%,var(--hi) 62%)}
+.lead{font-size:clamp(19px,2.6vw,24px);max-width:30em;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.b{display:inline-block;text-decoration:none;font-weight:500;padding:13px 26px;border-radius:10px;border:2px solid var(--acc);color:var(--acc)}
+.b.p{background:var(--acc);color:var(--bg)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;color:var(--mute);margin:30px 0 0;padding:0;list-style:none;font-size:15px}
+section{padding:54px 0;border-top:1px solid var(--line)}
+h2{font:800 clamp(28px,5vw,40px)/1.1 "Bricolage Grotesque",sans-serif;margin:0 0 20px;letter-spacing:-.02em}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.pr{display:grid;gap:16px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.c h3{font:800 23px "Bricolage Grotesque",sans-serif;margin:0 0 2px}
+.t{color:var(--mute);font-size:15px;margin:0 0 12px}
+.c p{margin:0 0 10px}.c b{font-weight:500;color:var(--acc)}
+.c a{color:var(--acc);font-weight:500}.soon{color:var(--mute)}
+ol{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:14px}
+ol li{counter-increment:s;padding-left:54px;position:relative}
+ol li:before{content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font:800 18px "Bricolage Grotesque",sans-serif}
+ol b{display:block;font-weight:500}ol span{color:var(--mute)}
+.tr{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.tr div{border-left:4px solid var(--hi);padding:2px 0 2px 16px}.tr b{display:block;font-weight:500}.tr span{color:var(--mute);font-size:16px}
+.demo{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.demo .box{display:flex;gap:16px;align-items:center;border:1px dashed var(--line);border-radius:12px;padding:18px;margin:14px 0}
+.demo .av{flex:none;width:52px;height:52px;border-radius:12px;background:var(--acc)}
+.demo p{margin:0}.demo button{font:inherit;font-weight:500;background:var(--ink);color:var(--bg);border:0;border-radius:10px;padding:11px 22px;cursor:pointer}
+footer{padding:50px 0 70px;border-top:1px solid var(--line)}
+footer h2{margin-bottom:10px}
+@media (max-width:640px){.two{grid-template-columns:1fr}nav a:not(:first-child){display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="w">
+<nav><a href="#top">Anes S.</a><span><a href="#work">Work</a><a href="#process">Process</a><a href="#trust">Why me</a><a href="#contact">Contact</a></span></nav>
+<header class="hero" id="top">
+<h1>I build websites that <span>read</span> right in any language.</h1>
+<p class="lead">I'm Anes, a front-end developer in Setif, Algeria. I turn ideas into fast, responsive pages in plain HTML, CSS and JavaScript, with special care for Arabic right-to-left layouts.</p>
+<div class="btns"><a class="b p" href="https://www.upwork.com/freelancers/~0137ad5dad5939b174">Hire me on Upwork</a><a class="b" href="#work">See my work</a></div>
+<ul class="facts"><li>HTML5 · CSS3 · JavaScript</li><li>Git and GitHub</li><li>Arabic, French, English</li></ul>
+</header>
+
+<section id="about"><div class="two"><div><h2>Who I am</h2><p>I'm a self-driven developer who likes clean code and clear pages. I work from home, which means I'm focused, reachable and used to delivering on my own.</p></div>
+<div><h2>What I offer</h2><p>Landing pages, small web apps and multilingual sites. If your audience reads Arabic, I make sure the layout, spacing and punctuation behave correctly, which many sites get wrong.</p></div></div></section>
+
+<section id="work"><h2>Selected work</h2>
+<div class="pr">
+<article class="c"><h3>Lisan, translation agency site</h3><p class="t">Landing page · Arabic, French, English</p><p><b>Challenge:</b> one page for three languages and two reading directions.</p><p><b>What I did:</b> language switch that flips text and direction live and remembers the visitor's choice. Light and dark themes included.</p><a href="https://semaaneanes5-cloud.github.io/Lisan___translation/">View live site</a></article>
+<article class="c"><h3>Mesarifi, expense dashboard</h3><p class="t">Web app · Arabic, right-to-left</p><p><b>Challenge:</b> a tool people can use daily with no account or server.</p><p><b>What I did:</b> add and delete expenses, totals by category, and data kept in the browser between visits.</p><a href="https://semaaneanes5-cloud.github.io/expenses-dashboard/">View live site</a></article>
+</div></section>
+
+<section id="process"><h2>How I work</h2>
+<ol><li><b>We agree on the goal.</b><span>You tell me what the page must do. I reply with a clear plan and timeline.</span></li>
+<li><b>I build a first version fast.</b><span>You see real progress early, not a surprise at the end.</span></li>
+<li><b>I test it on phone and desktop.</b><span>Including right-to-left and dark mode where they apply.</span></li>
+<li><b>I deliver clean code and fix what you flag.</b><span>Files are organized, commented where needed, and ready to host on GitHub Pages.</span></li></ol></section>
+
+<section id="trust"><h2>Why you can trust me</h2>
+<div class="tr"><div><b>You can verify my work</b><span>Every project has a live page and code on GitHub, so you can inspect it before hiring.</span></div>
+<div><b>I speak your language</b><span>Arabic, French and English, so briefs and feedback never get lost in translation.</span></div>
+<div><b>I say what I can't do</b><span>I take projects in my range and tell you early if something is outside it.</span></div>
+<div><b>You're protected</b><span>We work through Upwork, with payment held in escrow until you approve the work.</span></div></div></section>
+
+<section><h2>See the difference</h2>
+<div class="demo"><p>Press the button to flip this block between right-to-left and left-to-right, as a real Arabic site must.</p>
+<div class="box" id="bx" dir="rtl"><div class="av"></div><p id="tx">مرحبًا، هذا هو تخطيط الصفحة العربية: كل شيء يبدأ من اليمين.</p></div>
+<button id="tg" type="button">Switch to left-to-right</button></div></section>
+
+<footer id="contact"><h2>Let's build yours.</h2><p>Send me a message on Upwork with a short description of your project.</p><a class="b p" href="https://www.upwork.com/freelancers/~0137ad5dad5939b174">Contact me on Upwork</a></footer>
+</div>
+<script>
+var b=document.getElementById("bx"),t=document.getElementById("tx"),g=document.getElementById("tg");
+g.onclick=function(){var r=b.dir=="rtl";b.dir=r?"ltr":"rtl";t.textContent=r?"Hello, this is the same block in left-to-right: everything starts from the left.":"مرحبًا، هذا هو تخطيط الصفحة العربية: كل شيء يبدأ من اليمين.";g.textContent=r?"Switch to right-to-left":"Switch to left-to-right"};
+</script>
+</body>
+</html>
